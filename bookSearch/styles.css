@@ -1,0 +1,62 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+/* Centering the header */
+h1 {
+    text-align: center;
+}
+
+/* Styling for the book results */
+.book {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* Title style */
+.book h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Paragraph style for book details */
+.book p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Input field style */
+#searchInput {
+    padding: 10px;
+    width: 70%;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+/* Search button style */
+#searchButton {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the results container */
+#bookResults {
+    margin-top: 20px;
+}
