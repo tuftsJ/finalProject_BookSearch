@@ -1,0 +1,25 @@
+{
+  "name": "finalproject_booksearch",
+  "version": "1.0.0",
+  "description": "Book search using Open Library Search API",
+  "main": "index.js",
+  "scripts": {
+    "test": "harry potter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuftsJ/finalProject_BookSearch.git"
+  },
+  "keywords": [
+    "book",
+    "search",
+    "find",
+    "books"
+  ],
+  "author": "Jeff Tufts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuftsJ/finalProject_BookSearch/issues"
+  },
+  "homepage": "https://github.com/tuftsJ/finalProject_BookSearch#readme"
+}

@@ -3,18 +3,20 @@ const baseURL = "https://openlibrary.org/search.json";
 
 // Function to search for books
 function searchBooks(title) {
-    url = `${baseURL}?title=${encodeURIComponent(title)}`;
+    const url = `https://openlibrary.org/search.json?q=${encodeURIComponent(title)}`;
+
     return fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
+        .then(response => response.json())  // Parse the JSON response
+        .then(data => {
+            console.log('Total books found:', data.num_found);
+            console.log('First result:', data.docs[0]);
+
+            // Return the books data
+            return data.docs;
         })
-        .then(data => data.docs) // Return books from the response
         .catch(error => {
-            console.error('Error fetching data:', error);
-            return [];
+            console.error('Error:', error);
+            return [];  // Return empty array if error occurs
         });
 }
 
@@ -49,13 +51,14 @@ function displayBooks(books) {
 }
 
 // Handle the search button click
-document.getElementById('searchButton').addEventListener('click', function searchBooks() {
+document.getElementById('searchButton').addEventListener('click', function () {
     const searchQuery = document.getElementById('searchInput').value;
     if (searchQuery.trim() === '') {
         alert('Please enter a search query');
         return;
     }
 
+    // Call searchBooks with the query and then display results
     searchBooks(searchQuery)
         .then(books => displayBooks(books))
         .catch(error => console.error(error));
