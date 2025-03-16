@@ -3,11 +3,11 @@ body {
     font-family: Arial, sans-serif;
     padding: 20px;
     margin: 0;
-    background-color: #f4f4f9;
+    background-color: gray;
 }
 
 /* Centering the header */
-h1 {
+h1, h2 {
     text-align: center;
 }
 
@@ -46,9 +46,10 @@ h1 {
     padding: 10px 15px;
     font-size: 1rem;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: green;
     color: white;
-    border: none;
+    border: solid;
+    border-color: black;
     border-radius: 5px;
 }
 

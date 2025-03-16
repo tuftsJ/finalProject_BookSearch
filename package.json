@@ -1,25 +1,24 @@
 {
-  "name": "finalproject_booksearch",
+  "name": "todolist",
   "version": "1.0.0",
-  "description": "Book search using Open Library Search API",
-  "main": "index.js",
+  "description": "",
+  "main": "index.html",
   "scripts": {
-    "test": "harry potter"
+    "webpack": "webpack",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack serve --open"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tuftsJ/finalProject_BookSearch.git"
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "html-webpack-plugin": "^5.5.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   },
-  "keywords": [
-    "book",
-    "search",
-    "find",
-    "books"
-  ],
-  "author": "Jeff Tufts",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tuftsJ/finalProject_BookSearch/issues"
-  },
-  "homepage": "https://github.com/tuftsJ/finalProject_BookSearch#readme"
+  "dependencies": {
+    "babel-loader": "^8.2.5"
+  }
 }
